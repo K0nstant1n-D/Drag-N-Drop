@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #e5e5e5;
+  display: flex;
+  padding-top: 5rem;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  width: 650px;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.col-header {
+  width: 150px;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 20px;
+  padding: 0.8rem 1rem;
+  color: #fff;
+}
+
+.item {
+  width: 150px;
+  height: 66px;
+  border: 1px solid rgb(179, 179, 179);
+  box-shadow: 4px 4px 9px rgba(255, 255, 255, 0.36);
+  border-radius: 20px;
+  background: radial-gradient(rgb(83, 83, 83), rgb(190, 190, 190));
+  padding: 0.8rem 1rem;
+  color: #ffffff;
+  text-align: center;
+  cursor: grab;
+}
+
+.item:active {
+  cursor: grabbing;
+}
+
+.placeholder {
+  width: 150px;
+  height: 66px;
+}
+
+.start {
+  background: linear-gradient(90deg, #ff85e4 0%, #229efd 179.25%);
+}
+
+.progress {
+  background: linear-gradient(90deg, #209cff 0%, #68e0cf 100%);
+}
+
+.done {
+  background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
+}
+.throw {
+  background: radial-gradient(
+    rgb(255, 145, 0),
+    rgb(145, 255, 0),
+    rgb(0, 153, 128)
+  );
+}
+
+.hold {
+  background: linear-gradient(to right, red, purple),
+    linear-gradient(to right, red, purple);
+  background-origin: padding-box, border-box;
+  background-repeat: no-repeat;
+  border: 5px solid transparent;
+}
+
+.hide {
+  display: none;
+}
+
+.hovered {
+  border-top: 3px solid #8eb4ed;
+  border-radius: 20px;
+}
